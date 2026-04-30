@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_rounded_nav"
+        android:elevation="8dp"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemTextColor="@color/bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
+
+    <ImageButton
+        android:id="@+id/addPrescriptionButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/prescription"
+        android:background="@drawable/bg_gradient_circle"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        app:layout_anchor="@id/bottomNavigationView"
+        app:layout_anchorGravity="center|top"
+        android:translationY="8dp"
+        app:tint="@color/md_theme_onPrimary"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

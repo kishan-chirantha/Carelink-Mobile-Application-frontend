@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CareLink</string>
+    <string name="default_web_client_id">651778516076-ji4qbg28h03oaa0iq8bdottl0140kagd.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_text">Hey, Krishan!</string>
+    <string name="cart_item_product_name_txt">Product Name</string>
+    <string name="cart_item_category_name_txt">Category</string>
+    <string name="cart_item_product_price_txt">Rs. 0.00</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_confirm_your_location_btn_txt">Confirm Your Location</string>
+    <string name="pharmacy_list_header_txt">Nearby Pharmacies</string>
+    <string name="order_history_header_txt">Order History</string>
+    <string name="order_details_header_txt">Order Details</string>
+    <string name="order_waiting_btn_txt_pay_now">Pay Now</string>
+</resources>

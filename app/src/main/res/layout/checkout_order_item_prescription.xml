@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="14dp"
+    android:paddingVertical="12dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/checkout_rx_icon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/md_theme_primaryContainer"
+        app:strokeWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/checkout_rx_iconImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/prescription"
+            app:tint="@color/md_theme_onPrimaryContainer"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/checkout_pres_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="My Prescription.pdf"
+        android:textColor="@color/md_theme_onSurface"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/checkout_rx_icon"
+        app:layout_constraintEnd_toStartOf="@id/checkout_rx_price_group"
+        app:layout_constraintTop_toTopOf="@id/checkout_rx_icon"/>
+
+    <TextView
+        android:id="@+id/checkout_rx_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="Prescription"
+        android:textColor="@color/md_theme_onPrimaryContainer"
+        android:textSize="11.5sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_distance_chip"
+        android:backgroundTint="@color/md_theme_primaryContainer"
+        app:layout_constraintStart_toStartOf="@id/checkout_pres_name"
+        app:layout_constraintTop_toBottomOf="@id/checkout_pres_name"/>
+
+    <LinearLayout
+        android:id="@+id/checkout_rx_price_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/checkout_rx_icon"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_rx_icon">
+
+        <TextView
+            android:id="@+id/checkout_price_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="Pending"
+            android:textColor="@color/md_theme_onTertiaryContainer"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_distance_chip"
+            android:backgroundTint="@color/md_theme_tertiaryContainer"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

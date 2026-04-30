@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingEnd="1dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/chat_bg_message_sent"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/item_chat_send_messageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_onSurface"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="240dp"
+            tools:text="Okay doctor, I will get the X-ray done." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp">
+
+        <TextView
+            android:id="@+id/item_chat_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_outline"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginEnd="4dp"
+            tools:text="10:50 AM" />
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/check"
+            app:tint="@color/md_theme_primary"/>
+    </LinearLayout>
+</LinearLayout>
